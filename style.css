@@ -1,0 +1,91 @@
+*{
+    padding: 0px;
+    margin: 4px;
+}
+.text{
+    color: darkblue;
+    font-family: sans-serif;
+}
+.text h1{
+    color: blanchedalmond;
+    text-align: center;
+    font-weight: bold;
+    font-family: system-ui;
+    background-color: #09234b;
+    font-size: 1.5rem;
+}
+.text h3{
+    text-align: justify;
+}   
+.container img{
+    height: 420px;
+    background:var(--light-color);
+    position: fixed;
+    right: 50px;
+    width: 400px;
+ }
+ /* .container {
+     --light-color:#fff;
+height: 420px;
+background:var(--light-color);
+position: fixed;
+right: 50px;
+width: 400px;
+ bottom: 50px;
+max-width: 100px;
+} */
+
+.carousel{
+    overflow: hidden;
+    max-width: 1000px;
+    position: relative;
+}
+.carousel .carousel_item,
+.carousel .carousel_item--hidden {
+    display: none;
+}
+.carousel .carousel_item img {
+    width: 100%;
+    max-width: 1000px;
+    height: 500px;
+}
+.carousel .carousel_item--visible{
+    display: block;
+    animation: fadeVisibility 0.5s;
+}
+.carousel .carousel_actions{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0.1%;
+}
+.carousel .carousel_actions button {
+    border-radius: 50px;
+    border: 50;
+    font-weight: bold;
+    /* width: 250px;
+    height: 40px; */
+    
+}
+.carousel .carousel_actions button{
+    margin: 10px 150px;
+}
+/* .carousel .carousel_actions button#carousel_button--prev {
+  margin-left: 0px;
+}
+.carousel .carousel_actions button#carousel_button--next {
+  margin-right: 20px; */
+h5 {
+    text-align: center;
+    color: navy;
+    font: -moz-button;
+}
+ 
+@keyframes fadeVisibility {
+0%{
+    opacity: 0;
+}
+100%{
+    transform: opacity linear;
+}
+}
